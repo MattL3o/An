@@ -1,0 +1,61 @@
+PART I
+===========================================================================
+Virtual Ant (VA)
+	Memory
+		Stack
+		Size "MAX_SIZE"
+		Functions
+			Pop
+				Get position, remove from stack
+			Push
+				Pushes a coordinate to memory
+			Peek
+				Get position, don't remove from stack
+			Clear
+				Clears stack
+			Empty
+				Checks to see if stack is empty
+			Full
+				Checks to see if stack is full
+		Can be described as coordinate (x,y)
+		NO MEMORY IS DISPLAYED TO VA
+	Functions
+		MARK - marks it's current position
+		MOVE_F - Moves one position forward
+		MOVE_B - Moves one position backward
+		MOVE_L - Moves one position left
+		MOVE_R - Moves one position right
+		CWL
+			Checks if all positions to the left (until meeting a wall) are marked
+			if yes return 0
+			if no return 1
+		CWR
+			Checks if all positions to the Right (until meeting a wall) are marked
+			if yes return 0
+			if no return 1
+		CWF
+			Checks if all positions in Front (until meeting a wall) are marked
+			if yes return 0
+			if no return 1
+		CWB
+			Checks if all positions to Back (until meeting a wall) are marked
+			if yes return 0
+			if no return 1
+		BJPI
+			Goes x lengths in y direction
+			x and y are determinded from CWL, CWR, CWF, or CWB
+				Whichever is last and returns a response
+		CJPI
+			same as BJPI except it goes only 1 space instead of x
+		BACKTRACK
+			go to the last position in memory using Pop
+		RP n t
+			"repeats the n actions following the RP action for t times"
+			unclear what this means
+
+Questions:
+	What is "RP n t"
+	What is the maze
+
+PART II
+===========================================================================
